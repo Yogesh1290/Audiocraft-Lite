@@ -1,0 +1,158 @@
+AudioCraft Lite - Project Structure
+====================================
+
+audiocraft-lite/
+│
+├── 📄 Documentation
+│   ├── README.md                    # Main project overview
+│   ├── QUICKSTART.md               # 5-minute getting started guide
+│   ├── SETUP.md                    # Detailed installation instructions
+│   ├── FEATURES.md                 # Complete feature list
+│   ├── COMPARISON.md               # Comparison with original AudioCraft
+│   ├── ARCHITECTURE.md             # System design and data flow
+│   ├── PROJECT_STRUCTURE.md        # File organization details
+│   ├── TROUBLESHOOTING.md          # Common issues and solutions
+│   ├── SUMMARY.md                  # Project summary
+│   └── LICENSE                     # MIT License
+│
+├── 🐳 Docker Configuration
+│   └── docker-compose.yml          # Docker Compose setup
+│
+├── 🔧 Backend (Python/FastAPI)
+│   ├── main.py                     # FastAPI application & endpoints
+│   ├── model_manager.py            # Model loading & audio generation
+│   ├── config.py                   # Configuration settings
+│   ├── requirements.txt            # Python dependencies
+│   ├── Dockerfile                  # Backend Docker image
+│   ├── start.sh                    # Linux/Mac startup script
+│   ├── start.bat                   # Windows startup script
+│   ├── outputs/                    # Generated audio files (runtime)
+│   └── venv/                       # Python virtual environment
+│
+├── 🎨 Frontend (React)
+│   ├── src/
+│   │   ├── App.js                  # Main React component
+│   │   ├── App.css                 # Component styling
+│   │   ├── index.js                # React entry point
+│   │   └── index.css               # Global styles
+│   ├── public/
+│   │   └── index.html              # HTML template
+│   ├── package.json                # Node.js dependencies
+│   ├── Dockerfile                  # Frontend Docker image
+│   ├── nginx.conf                  # Nginx configuration
+│   └── node_modules/               # Node dependencies (runtime)
+│
+├── 📚 Reference
+│   └── audiocraft/                 # Original AudioCraft repo (cloned)
+│
+└── 🚫 .gitignore                   # Git ignore rules
+
+Key Files Explained
+===================
+
+Backend Core Files:
+-------------------
+main.py              - API endpoints, CORS, server setup
+model_manager.py     - Model loading, generation logic, cleanup
+config.py            - All configuration in one place
+
+Frontend Core Files:
+--------------------
+App.js               - UI components, state management, API calls
+App.css              - Modern gradient design, responsive layout
+index.js             - React initialization
+
+Configuration Files:
+--------------------
+requirements.txt     - Minimal Python dependencies (13 packages)
+package.json         - React dependencies and scripts
+docker-compose.yml   - One-command deployment setup
+
+Documentation Files:
+--------------------
+QUICKSTART.md        - Get running in 5 minutes
+SETUP.md             - Detailed setup for all platforms
+TROUBLESHOOTING.md   - Solutions to common problems
+FEATURES.md          - What the app can do
+COMPARISON.md        - vs Original AudioCraft
+ARCHITECTURE.md      - How it all works together
+
+File Sizes (Approximate):
+=========================
+Backend code:        ~15 KB (3 Python files)
+Frontend code:       ~20 KB (4 JS/CSS files)
+Documentation:       ~100 KB (9 markdown files)
+Dependencies:        ~500 MB (Python + Node packages)
+Models (cached):     ~500 MB - 1 GB (downloaded on first run)
+Generated audio:     Varies (auto-cleanup enabled)
+
+Total disk space:    ~1-2 GB
+
+Directory Purposes:
+===================
+
+/backend/outputs/    - Stores generated WAV files
+                     - Auto-cleanup keeps only recent files
+                     - Served via /outputs/ endpoint
+
+/backend/venv/       - Python virtual environment
+                     - Isolates dependencies
+                     - Created during setup
+
+/frontend/build/     - Production React build
+                     - Created by 'npm run build'
+                     - Optimized static files
+
+/frontend/node_modules/ - Node.js packages
+                        - Created by 'npm install'
+                        - ~500 MB
+
+~/.cache/audiocraft-lite/ - Model cache (outside project)
+                          - Shared across runs
+                          - ~500 MB - 1 GB
+
+Quick Navigation:
+=================
+
+Want to...                          Look at...
+-----------                         ----------
+Get started quickly                 QUICKSTART.md
+Understand the project              README.md
+Install step-by-step                SETUP.md
+Fix an issue                        TROUBLESHOOTING.md
+See all features                    FEATURES.md
+Compare with original               COMPARISON.md
+Understand architecture             ARCHITECTURE.md
+Modify backend                      backend/main.py, model_manager.py
+Modify frontend                     frontend/src/App.js
+Change settings                     backend/config.py
+Deploy with Docker                  docker-compose.yml
+Add dependencies                    requirements.txt, package.json
+
+Development Workflow:
+=====================
+
+1. Edit backend code → backend/*.py
+2. Edit frontend code → frontend/src/*.js
+3. Test locally → Run both servers
+4. Build for production → npm run build
+5. Deploy → Docker or manual
+
+File Relationships:
+===================
+
+config.py
+    ↓ imported by
+main.py
+    ↓ uses
+model_manager.py
+    ↓ loads
+AudioCraft Models
+    ↓ generates
+Audio Files
+    ↓ served to
+Frontend (App.js)
+    ↓ displays in
+User Browser
+
+This structure keeps everything organized, documented, and easy to navigate!

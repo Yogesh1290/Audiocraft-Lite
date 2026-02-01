@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist-python/
+build-python/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+backend/outputs/*.wav
+backend/outputs/*.mp3
+frontend/build/
+
+# Distribution packages (keep in dist/ folder)
+*.zip
+
+# Model weights and cache (NEVER commit these!)
+.cache/
+*.cache
+models/
+*.bin
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Git
+.git/

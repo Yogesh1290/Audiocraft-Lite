@@ -1,0 +1,82 @@
+AudioCraft Lite
+Copyright (c) 2026 AI Music Studio .pro
+
+This project is based on AudioCraft by Meta AI Research.
+
+---
+
+THIRD-PARTY SOFTWARE NOTICES AND INFORMATION
+
+This project incorporates components from the following projects:
+
+1. AudioCraft by Meta AI Research
+   - Source: https://github.com/facebookresearch/audiocraft
+   - License: MIT (Code) | CC-BY-NC 4.0 (Model Weights)
+   - Copyright: Meta Platforms, Inc. and affiliates
+
+2. Model Weights License (CC-BY-NC 4.0)
+   The AI model weights (MusicGen, AudioGen) are licensed under:
+   Creative Commons Attribution-NonCommercial 4.0 International
+   
+   This means:
+   - You MAY use for personal, educational, and research purposes
+   - You MAY NOT use for commercial purposes without permission
+   - You MUST provide attribution to Meta AI Research
+   - You MUST indicate if changes were made
+   
+   Full license: https://creativecommons.org/licenses/by-nc/4.0/
+
+3. Model Weights Source
+   Models are downloaded from HuggingFace:
+   - facebook/musicgen-small
+   - facebook/musicgen-medium
+   - facebook/musicgen-large
+   
+   These models are NOT included in this repository.
+   They are downloaded by users when first running the application.
+
+---
+
+ATTRIBUTION REQUIREMENTS
+
+When using this software, you must:
+
+1. Provide attribution to Meta's AudioCraft:
+   "Powered by Meta's AudioCraft"
+   https://github.com/facebookresearch/audiocraft
+
+2. Include a notice that model weights are CC-BY-NC 4.0 licensed
+
+3. For any modifications, indicate what was changed
+
+4. Keep this NOTICE file intact
+
+---
+
+COMMERCIAL USE
+
+The code in this repository is MIT licensed and can be used commercially.
+
+However, the AI model weights are CC-BY-NC 4.0 licensed, which prohibits
+commercial use without explicit permission from Meta AI Research.
+
+For commercial licensing of the models, contact Meta AI Research.
+
+---
+
+NO WARRANTY
+
+This software and the model weights are provided "AS IS" without warranty
+of any kind, express or implied, including but not limited to warranties
+of merchantability, fitness for a particular purpose, and non-infringement.
+
+---
+
+CONTACT
+
+For questions about this project:
+- GitHub: [Your GitHub URL]
+- Website: AIMusicStudio.pro
+
+For questions about AudioCraft or commercial licensing:
+- Meta AI Research: https://github.com/facebookresearch/audiocraft

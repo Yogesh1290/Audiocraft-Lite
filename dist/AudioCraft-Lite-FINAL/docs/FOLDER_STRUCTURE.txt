@@ -1,0 +1,106 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║        🎵 AudioCraft Lite - Organized Structure 🎵          ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+📦 audiocraft-lite/
+│
+├── 🚀 MAIN FILES (What You Need)
+│   ├── AudioCraft-Lite.bat          ← START THE APP
+│   ├── OPEN_MY_AUDIO_FILES.bat      ← VIEW YOUR FILES
+│   ├── INSTALL_DESKTOP_SHORTCUT.bat ← CREATE SHORTCUT
+│   ├── README.md                     ← START HERE
+│   └── FOLDER_STRUCTURE.txt          ← THIS FILE
+│
+├── 📚 docs/ (All Documentation)
+│   │
+│   ├── 👤 user-guides/ (For Non-Technical Users)
+│   │   ├── README.md                 ← Guide index
+│   │   ├── START_HERE_SIMPLE.md      ← Beginner guide
+│   │   ├── README_FOR_USERS.md       ← Complete guide
+│   │   ├── SIMPLE_SETUP_GUIDE.md     ← Setup help
+│   │   ├── TROUBLESHOOTING.md        ← Fix problems
+│   │   └── PACKAGE_CONTENTS.txt      ← What's included
+│   │
+│   ├── 🔧 technical/ (Technical Docs)
+│   │   ├── README.md                 ← Tech index
+│   │   ├── ARCHITECTURE.md           ← System design
+│   │   ├── FEATURES.md               ← Feature list
+│   │   ├── PROJECT_STRUCTURE.md      ← Code organization
+│   │   ├── NEW_UI_FEATURES.md        ← UI details
+│   │   └── COMPARISON.md             ← Comparisons
+│   │
+│   └── 👨‍💻 developer/ (For Developers)
+│       ├── README.md                 ← Dev index
+│       ├── BUILD_INSTRUCTIONS.md     ← Build guide
+│       ├── COMPLETE_GUIDE.md         ← Full dev guide
+│       ├── QUALITY_GUIDE.md          ← Optimize quality
+│       ├── MODEL_SELECTION_GUIDE.md  ← Choose models
+│       ├── STANDALONE_EXE_GUIDE.md   ← Executable guide
+│       ├── QUICKSTART.md             ← Quick start
+│       ├── SETUP.md                  ← Dev setup
+│       ├── START_HERE.md             ← Dev start
+│       ├── WHATS_NEW.md              ← Changelog
+│       ├── SUMMARY.md                ← Summary
+│       ├── FINAL_SUMMARY.md          ← Final status
+│       ├── USER_GUIDE_EXE.md         ← Exe user guide
+│       ├── DEPLOYMENT_SUCCESS.md     ← Deployment notes
+│       └── PROJECT_TREE.txt          ← File tree
+│
+├── 🖥️ backend/ (Server Code)
+│   ├── main.py                       ← FastAPI server
+│   ├── model_manager.py              ← AI model handler
+│   ├── config.py                     ← Configuration
+│   ├── requirements.txt              ← Dependencies
+│   ├── requirements-simple.txt       ← Simple deps
+│   ├── venv/                         ← Virtual environment
+│   └── outputs/                      ← Generated audio files
+│
+├── 🎨 frontend/ (User Interface)
+│   ├── src/
+│   │   ├── App.js                    ← Main React app
+│   │   ├── App.css                   ← Styles
+│   │   └── index.js                  ← Entry point
+│   ├── public/
+│   │   └── index.html                ← HTML template
+│   ├── build/                        ← Production build
+│   ├── node_modules/                 ← npm packages
+│   └── package.json                  ← npm config
+│
+└── 🔨 build/ (Build Tools - Optional)
+    ├── build_exe.py                  ← Build script
+    ├── launcher.py                   ← Exe launcher
+    ├── BUILD.bat                     ← Build batch
+    └── CREATE_SHORTCUT.bat           ← Old shortcut
+
+
+═══════════════════════════════════════════════════════════════
+
+🎯 QUICK NAVIGATION
+
+For Users:
+  → Start: AudioCraft-Lite.bat
+  → Help: docs/user-guides/START_HERE_SIMPLE.md
+  → Files: OPEN_MY_AUDIO_FILES.bat
+
+For Developers:
+  → Build: docs/developer/BUILD_INSTRUCTIONS.md
+  → Guide: docs/developer/COMPLETE_GUIDE.md
+  → Setup: docs/developer/SETUP.md
+
+For Technical Info:
+  → Architecture: docs/technical/ARCHITECTURE.md
+  → Features: docs/technical/FEATURES.md
+
+═══════════════════════════════════════════════════════════════
+
+📝 NOTES
+
+✅ All documentation is now organized in docs/ folder
+✅ User guides separated from technical docs
+✅ Developer docs in their own section
+✅ Main folder is clean and simple
+✅ Easy to find what you need
+
+═══════════════════════════════════════════════════════════════
