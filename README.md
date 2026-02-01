@@ -194,7 +194,7 @@ Go to: `backend/outputs/` folder
 
 MIT License - Free to use, modify, and distribute
 
-**Attribution Required**: Credit Meta AudioCraft and AI Music Studio .pro
+**Attribution Required**: Credit Meta AudioCraft.
 
 ---
 
