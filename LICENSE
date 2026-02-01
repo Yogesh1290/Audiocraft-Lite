@@ -34,6 +34,9 @@ The AI model weights used by this software are provided by Meta AI Research
 under the Creative Commons Attribution-NonCommercial 4.0 International License
 (CC-BY-NC 4.0).
 
+Official License: https://github.com/facebookresearch/audiocraft/blob/main/LICENSE_weights
+CC-BY-NC 4.0 Full Text: https://creativecommons.org/licenses/by-nc/4.0/
+
 This means:
 - ✅ You CAN use the models for personal, educational, and research purposes
 - ✅ You CAN modify and share the models for non-commercial purposes
